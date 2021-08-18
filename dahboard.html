@@ -205,14 +205,14 @@
 
 
     <!-- dashboard script -->
-    <script src="/js/dashboard.js"></script>
+    <script src="./js/dashboard.js"></script>
 
     <!-- nav bar script -->
     <script>
         const body = document.querySelector("body");
 
         (async () => {
-            const response = await fetch('navbar.html');
+            const response = await fetch('./navbar.html');
             const navbar = await response.text();
             body.insertAdjacentHTML('afterbegin', navbar);
         })();
