@@ -1,0 +1,486 @@
+@import "globals";
+@import "navbar";
+
+.navbar__container {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+#dashboard {
+    min-height: 100vh;
+    padding-top: 10vh;
+    // border: 2px solid red;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+
+    // & > * {
+    // @include border(2px, green);
+    // }
+}
+
+// click option stlyle
+.optionClickStyle {
+    border-left: 4px solid $theme-pink;
+    background-color: rgba(83, 81, 81, 0.349);
+
+    & * {
+        color: $theme-white !important;
+    }
+}
+
+#dashboard__leftBox {
+    flex-grow: 0.1;
+    flex-shrink: 0.4;
+    flex-basis: 0px;
+    background-color: rgb(36, 34, 34);
+    border-right: 1px solid $theme-silver;
+
+    .optionsBox {
+        min-width: 140px;
+
+        .optionsBox__optionItem {
+            padding: 1.2em 0;
+
+            &:hover {
+                background-color: rgba(83, 81, 81, 0.349);
+                cursor: pointer;
+            }
+
+            & * {
+                color: rgb(122, 120, 120);
+            }
+
+            .optionsBox__iconBox {
+                display: grid;
+                place-items: center;
+
+                i {
+                    font-size: 1rem;
+                }
+            }
+
+            p.optionsBox__nameBox {
+                font-size: 0.8rem;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+#dashboard__rightBox {
+    flex-grow: 0.9;
+    flex-shrink: 0.6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 50%);
+
+    & > * {
+        padding: 2rem;
+        // overflow-y: scroll;
+        // border: 2px solid red;
+    }
+
+    .topRightBox {
+        // box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.486);
+        border-bottom: 6px double $theme-pink;
+        display: grid;
+        place-items: center;
+
+        & > * {
+            // border: 1px solid $theme-silver;
+            width: 80%;
+            max-width: 1000px;
+            min-width: 300px;
+        }
+
+        // forms
+        .formSubmitBtn {
+            margin-left: auto;
+            display: block;
+            width: 20%;
+            min-width: 80px;
+            max-width: 200px;
+            border: none;
+            padding: 0.5rem 1rem;
+            background-color: $theme-pink;
+            letter-spacing: 2px;
+            color: white;
+            transition: box-shadow 500ms ease 0s;
+            box-shadow: -10px 6px 4px rgba(56, 54, 54, 0.212);
+
+            &:hover {
+                box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.43);
+                cursor: pointer;
+            }
+        }
+
+        // search post form
+        #searchPostForm {
+            .queryBox {
+                border: 1px solid $theme-silver;
+                margin-bottom: 1.5rem;
+                display: flex;
+                align-items: stretch;
+                background-color: $theme-optionsBoxBgColor;
+
+                & > * {
+                    color: white;
+                }
+
+                .queryBox__selectorWrapper {
+                    border-right: 1px solid $theme-silver;
+
+                    select {
+                        flex: 0.2;
+                        background-color: transparent;
+                        color: white;
+                        text-transform: capitalize;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+
+                        &:focus {
+                            border: none;
+                            outline: none;
+                            box-shadow: none;
+                        }
+
+                        option {
+                            background-color: rgb(36, 34, 34);
+                            padding: 0.25rem 0.5rem 0.25rem 1rem;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+
+                i {
+                    flex-grow: 0.05;
+                    flex-basis: 10px;
+                    display: grid;
+                    place-items: center;
+                }
+
+                input {
+                    padding-left: 1rem;
+                    background-color: transparent;
+                    border: none;
+                    flex-grow: 0.75;
+                    flex-basis: 50px;
+                    letter-spacing: 1px;
+                    font-weight: 300;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        // create post form
+        #createPostForm {
+            .queryBox {
+                border: 1px solid $theme-silver;
+                margin-bottom: 1.5rem;
+                display: flex;
+                align-items: stretch;
+                background-color: $theme-optionsBoxBgColor;
+
+                & > * {
+                    color: white;
+                }
+
+                .queryBox__selectorWrapper {
+                    border-right: 1px solid $theme-silver;
+
+                    select {
+                        flex: 0.2;
+                        background-color: transparent;
+                        color: white;
+                        text-transform: capitalize;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+
+                        &:focus {
+                            border: none;
+                            outline: none;
+                            box-shadow: none;
+                        }
+
+                        option {
+                            background-color: rgb(36, 34, 34);
+                            padding: 0.25rem 0.5rem 0.25rem 1rem;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+
+                i {
+                    flex-grow: 0.05;
+                    flex-basis: 10px;
+                    display: grid;
+                    place-items: center;
+                }
+
+                input {
+                    padding-left: 1rem;
+                    background-color: transparent;
+                    border: none;
+                    flex-grow: 0.75;
+                    flex-basis: 50px;
+                    letter-spacing: 1px;
+                    font-weight: 300;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            textarea {
+                width: 100%;
+                height: 80px;
+                max-height: 100px;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                background-color: transparent;
+                margin-bottom: 1.2rem;
+                background-color: $theme-optionsBoxBgColor;
+                color: $theme-white;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        #updatePostForm {
+            .queryBox {
+                border: 1px solid $theme-silver;
+                margin-bottom: 1.5rem;
+                display: flex;
+                align-items: stretch;
+                background-color: $theme-optionsBoxBgColor;
+
+                & > * {
+                    color: white;
+                }
+
+                .queryBox__selectorWrapper {
+                    border-right: 1px solid $theme-silver;
+
+                    select {
+                        flex: 0.2;
+                        background-color: transparent;
+                        color: white;
+                        text-transform: capitalize;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+
+                        &:focus {
+                            border: none;
+                            outline: none;
+                            box-shadow: none;
+                        }
+
+                        option {
+                            background-color: rgb(36, 34, 34);
+                            padding: 0.25rem 0.5rem 0.25rem 1rem;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+
+                i {
+                    flex-grow: 0.05;
+                    flex-basis: 10px;
+                    display: grid;
+                    place-items: center;
+                }
+
+                input {
+                    padding-left: 1rem;
+                    background-color: transparent;
+                    border: none;
+                    flex-grow: 0.75;
+                    flex-basis: 50px;
+                    letter-spacing: 1px;
+                    font-weight: 300;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            textarea {
+                width: 100%;
+                height: 80px;
+                max-height: 100px;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                background-color: transparent;
+                margin-bottom: 1.2rem;
+                background-color: $theme-optionsBoxBgColor;
+                color: $theme-white;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        // delete post form
+        #deletePostForm{
+            .queryBox {
+                border: 1px solid $theme-silver;
+                margin-bottom: 1.5rem;
+                display: flex;
+                align-items: stretch;
+                background-color: $theme-optionsBoxBgColor;
+
+                & > * {
+                    color: white;
+                }
+
+                .queryBox__selectorWrapper {
+                    border-right: 1px solid $theme-silver;
+
+                    select {
+                        flex: 0.2;
+                        background-color: transparent;
+                        color: white;
+                        text-transform: capitalize;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+
+                        &:focus {
+                            border: none;
+                            outline: none;
+                            box-shadow: none;
+                        }
+
+                        option {
+                            background-color: rgb(36, 34, 34);
+                            padding: 0.25rem 0.5rem 0.25rem 1rem;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+
+                i {
+                    flex-grow: 0.05;
+                    flex-basis: 10px;
+                    display: grid;
+                    place-items: center;
+                }
+
+                input {
+                    padding-left: 1rem;
+                    background-color: transparent;
+                    border: none;
+                    flex-grow: 0.75;
+                    flex-basis: 50px;
+                    letter-spacing: 1px;
+                    font-weight: 300;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            } 
+        }
+
+        // get all posts form
+        #getAllPostsForm {
+            .queryBox {
+                border: 1px solid $theme-silver;
+                margin-bottom: 1.5rem;
+                display: flex;
+                align-items: stretch;
+                background-color: $theme-optionsBoxBgColor;
+
+                .queryBox__selectorWrapper {
+                    border-right: 1px solid $theme-silver;
+                    flex: 1;
+
+                    select {
+                        width: 100%;
+                        background-color: transparent;
+                        color: white;
+                        text-transform: capitalize;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+
+                        &:focus {
+                            border: none;
+                            outline: none;
+                            box-shadow: none;
+                        }
+
+                        option {
+                            background-color: rgb(36, 34, 34);
+                            padding: 0.25rem 0.5rem 0.25rem 1rem;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        //   get all blogs form
+        & > form:nth-of-type(6) {
+            height: 90%;
+            q {
+                font-size: 1.2rem;
+                color: rgb(226, 226, 226);
+                color: $theme-silver;
+                font-weight: 700;
+                letter-spacing: 1px;
+
+                &::before,
+                &::after {
+                    color: $theme-pink;
+                    font-size: 2rem;
+                    line-height: 3rem;
+                }
+
+                #bloggerUserId {
+                    color: $theme-pink;
+                }
+            }
+        }
+    }
+
+    .bottomRightBox {
+        .bottomRightBox__heading {
+            color: $theme-white;
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+        }
+
+        #resultBox {
+            height: 80%;
+            min-height: 100px;
+            max-height: 300px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            border: 1px solid $theme-silver;
+            color: $theme-white;
+            padding: {
+                top: 1rem;
+                left: 1rem;
+            };
+        }
+    }
+}

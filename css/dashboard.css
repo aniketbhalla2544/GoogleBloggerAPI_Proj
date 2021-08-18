@@ -1,0 +1,656 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #1a1a1d;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+p {
+  line-height: 1.8;
+  color: #5c5c5c;
+}
+
+textarea {
+  resize: none;
+}
+
+a:any-link {
+  color: #242424;
+}
+
+.buttonBaseStyle {
+  padding: 0.8rem 1rem;
+  border: 2.5px solid #c3073f;
+  outline: none;
+  border-radius: 2em;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  text-align: center;
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: white;
+  transition: box-shadow 500ms ease 0s;
+  box-shadow: -10px 10px 4px rgba(56, 54, 54, 0.212);
+}
+
+.buttonBaseStyle:hover {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.43);
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.buttonBaseStyle:link, .buttonBaseStyle:visited {
+  color: whitesmoke;
+}
+
+.buttonBaseStyle::focus {
+  outline: none;
+}
+
+.dividerLine {
+  border-right: 4px solid white;
+  padding-right: 1rem;
+}
+
+.resultBox__linkStyle {
+  text-decoration: underline;
+}
+
+.resultBox__linkStyle:link, .resultBox__linkStyle:visited {
+  color: #c3073f;
+}
+
+.resultBox__linkStyle:hover {
+  color: #920831;
+  cursor: pointer;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #1a1a1d;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+p {
+  line-height: 1.8;
+  color: #5c5c5c;
+}
+
+textarea {
+  resize: none;
+}
+
+a:any-link {
+  color: #242424;
+}
+
+.buttonBaseStyle {
+  padding: 0.8rem 1rem;
+  border: 2.5px solid #c3073f;
+  outline: none;
+  border-radius: 2em;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  text-align: center;
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: white;
+  transition: box-shadow 500ms ease 0s;
+  box-shadow: -10px 10px 4px rgba(56, 54, 54, 0.212);
+}
+
+.buttonBaseStyle:hover {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.43);
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.buttonBaseStyle:link, .buttonBaseStyle:visited {
+  color: whitesmoke;
+}
+
+.buttonBaseStyle::focus {
+  outline: none;
+}
+
+.dividerLine {
+  border-right: 4px solid white;
+  padding-right: 1rem;
+}
+
+.resultBox__linkStyle {
+  text-decoration: underline;
+}
+
+.resultBox__linkStyle:link, .resultBox__linkStyle:visited {
+  color: #c3073f;
+}
+
+.resultBox__linkStyle:hover {
+  color: #920831;
+  cursor: pointer;
+}
+
+.navbar__container {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.267);
+  z-index: 1000;
+  background-color: #1a1a1d;
+  gap: 0 35px;
+}
+
+.navbar__container .navbar__logo {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.navbar__container .navbar__logo span:nth-of-type(1) {
+  color: white;
+}
+
+.navbar__container .navbar__logo span:nth-of-type(2) {
+  color: #c3073f;
+}
+
+.navbar__container .dividerLine {
+  border-right: 3px solid white;
+  display: inline-block;
+  height: 3rem;
+  width: 0px;
+}
+
+.navbar__container .navbar__navLink {
+  font-size: 1rem;
+  transition: color 400ms ease 0s;
+  color: white;
+}
+
+.navbar__container .navbar__navLink:hover {
+  color: #c3073f;
+  border-bottom: 2px groove #c3073f;
+}
+
+.navbar__container {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+#dashboard {
+  min-height: 100vh;
+  padding-top: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.optionClickStyle {
+  border-left: 4px solid #c3073f;
+  background-color: rgba(83, 81, 81, 0.349);
+}
+
+.optionClickStyle * {
+  color: white !important;
+}
+
+#dashboard__leftBox {
+  flex-grow: 0.1;
+  flex-shrink: 0.4;
+  flex-basis: 0px;
+  background-color: #242222;
+  border-right: 1px solid #4e4e50;
+}
+
+#dashboard__leftBox .optionsBox {
+  min-width: 140px;
+}
+
+#dashboard__leftBox .optionsBox .optionsBox__optionItem {
+  padding: 1.2em 0;
+}
+
+#dashboard__leftBox .optionsBox .optionsBox__optionItem:hover {
+  background-color: rgba(83, 81, 81, 0.349);
+  cursor: pointer;
+}
+
+#dashboard__leftBox .optionsBox .optionsBox__optionItem * {
+  color: #7a7878;
+}
+
+#dashboard__leftBox .optionsBox .optionsBox__optionItem .optionsBox__iconBox {
+  display: grid;
+  place-items: center;
+}
+
+#dashboard__leftBox .optionsBox .optionsBox__optionItem .optionsBox__iconBox i {
+  font-size: 1rem;
+}
+
+#dashboard__leftBox .optionsBox .optionsBox__optionItem p.optionsBox__nameBox {
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+#dashboard__rightBox {
+  flex-grow: 0.9;
+  flex-shrink: 0.6;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 50%);
+}
+
+#dashboard__rightBox > * {
+  padding: 2rem;
+}
+
+#dashboard__rightBox .topRightBox {
+  border-bottom: 6px double #c3073f;
+  display: grid;
+  place-items: center;
+}
+
+#dashboard__rightBox .topRightBox > * {
+  width: 80%;
+  max-width: 1000px;
+  min-width: 300px;
+}
+
+#dashboard__rightBox .topRightBox .formSubmitBtn {
+  margin-left: auto;
+  display: block;
+  width: 20%;
+  min-width: 80px;
+  max-width: 200px;
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: #c3073f;
+  letter-spacing: 2px;
+  color: white;
+  transition: box-shadow 500ms ease 0s;
+  box-shadow: -10px 6px 4px rgba(56, 54, 54, 0.212);
+}
+
+#dashboard__rightBox .topRightBox .formSubmitBtn:hover {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.43);
+  cursor: pointer;
+}
+
+#dashboard__rightBox .topRightBox #searchPostForm .queryBox {
+  border: 1px solid #4e4e50;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: stretch;
+  background-color: rgba(83, 81, 81, 0.349);
+}
+
+#dashboard__rightBox .topRightBox #searchPostForm .queryBox > * {
+  color: white;
+}
+
+#dashboard__rightBox .topRightBox #searchPostForm .queryBox .queryBox__selectorWrapper {
+  border-right: 1px solid #4e4e50;
+}
+
+#dashboard__rightBox .topRightBox #searchPostForm .queryBox .queryBox__selectorWrapper select {
+  flex: 0.2;
+  background-color: transparent;
+  color: white;
+  text-transform: capitalize;
+}
+
+#dashboard__rightBox .topRightBox #searchPostForm .queryBox .queryBox__selectorWrapper select:hover {
+  cursor: pointer;
+}
+
+#dashboard__rightBox .topRightBox #searchPostForm .queryBox .queryBox__selectorWrapper select:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+#dashboard__rightBox .topRightBox #searchPostForm .queryBox .queryBox__selectorWrapper select option {
+  background-color: #242222;
+  padding: 0.25rem 0.5rem 0.25rem 1rem;
+  font-size: 0.8rem;
+}
+
+#dashboard__rightBox .topRightBox #searchPostForm .queryBox i {
+  flex-grow: 0.05;
+  flex-basis: 10px;
+  display: grid;
+  place-items: center;
+}
+
+#dashboard__rightBox .topRightBox #searchPostForm .queryBox input {
+  padding-left: 1rem;
+  background-color: transparent;
+  border: none;
+  flex-grow: 0.75;
+  flex-basis: 50px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+#dashboard__rightBox .topRightBox #searchPostForm .queryBox input:focus {
+  outline: none;
+}
+
+#dashboard__rightBox .topRightBox #createPostForm .queryBox {
+  border: 1px solid #4e4e50;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: stretch;
+  background-color: rgba(83, 81, 81, 0.349);
+}
+
+#dashboard__rightBox .topRightBox #createPostForm .queryBox > * {
+  color: white;
+}
+
+#dashboard__rightBox .topRightBox #createPostForm .queryBox .queryBox__selectorWrapper {
+  border-right: 1px solid #4e4e50;
+}
+
+#dashboard__rightBox .topRightBox #createPostForm .queryBox .queryBox__selectorWrapper select {
+  flex: 0.2;
+  background-color: transparent;
+  color: white;
+  text-transform: capitalize;
+}
+
+#dashboard__rightBox .topRightBox #createPostForm .queryBox .queryBox__selectorWrapper select:hover {
+  cursor: pointer;
+}
+
+#dashboard__rightBox .topRightBox #createPostForm .queryBox .queryBox__selectorWrapper select:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+#dashboard__rightBox .topRightBox #createPostForm .queryBox .queryBox__selectorWrapper select option {
+  background-color: #242222;
+  padding: 0.25rem 0.5rem 0.25rem 1rem;
+  font-size: 0.8rem;
+}
+
+#dashboard__rightBox .topRightBox #createPostForm .queryBox i {
+  flex-grow: 0.05;
+  flex-basis: 10px;
+  display: grid;
+  place-items: center;
+}
+
+#dashboard__rightBox .topRightBox #createPostForm .queryBox input {
+  padding-left: 1rem;
+  background-color: transparent;
+  border: none;
+  flex-grow: 0.75;
+  flex-basis: 50px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+#dashboard__rightBox .topRightBox #createPostForm .queryBox input:focus {
+  outline: none;
+}
+
+#dashboard__rightBox .topRightBox #createPostForm textarea {
+  width: 100%;
+  height: 80px;
+  max-height: 100px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: transparent;
+  margin-bottom: 1.2rem;
+  background-color: rgba(83, 81, 81, 0.349);
+  color: white;
+}
+
+#dashboard__rightBox .topRightBox #createPostForm textarea:focus {
+  outline: none;
+}
+
+#dashboard__rightBox .topRightBox #updatePostForm .queryBox {
+  border: 1px solid #4e4e50;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: stretch;
+  background-color: rgba(83, 81, 81, 0.349);
+}
+
+#dashboard__rightBox .topRightBox #updatePostForm .queryBox > * {
+  color: white;
+}
+
+#dashboard__rightBox .topRightBox #updatePostForm .queryBox .queryBox__selectorWrapper {
+  border-right: 1px solid #4e4e50;
+}
+
+#dashboard__rightBox .topRightBox #updatePostForm .queryBox .queryBox__selectorWrapper select {
+  flex: 0.2;
+  background-color: transparent;
+  color: white;
+  text-transform: capitalize;
+}
+
+#dashboard__rightBox .topRightBox #updatePostForm .queryBox .queryBox__selectorWrapper select:hover {
+  cursor: pointer;
+}
+
+#dashboard__rightBox .topRightBox #updatePostForm .queryBox .queryBox__selectorWrapper select:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+#dashboard__rightBox .topRightBox #updatePostForm .queryBox .queryBox__selectorWrapper select option {
+  background-color: #242222;
+  padding: 0.25rem 0.5rem 0.25rem 1rem;
+  font-size: 0.8rem;
+}
+
+#dashboard__rightBox .topRightBox #updatePostForm .queryBox i {
+  flex-grow: 0.05;
+  flex-basis: 10px;
+  display: grid;
+  place-items: center;
+}
+
+#dashboard__rightBox .topRightBox #updatePostForm .queryBox input {
+  padding-left: 1rem;
+  background-color: transparent;
+  border: none;
+  flex-grow: 0.75;
+  flex-basis: 50px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+#dashboard__rightBox .topRightBox #updatePostForm .queryBox input:focus {
+  outline: none;
+}
+
+#dashboard__rightBox .topRightBox #updatePostForm textarea {
+  width: 100%;
+  height: 80px;
+  max-height: 100px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: transparent;
+  margin-bottom: 1.2rem;
+  background-color: rgba(83, 81, 81, 0.349);
+  color: white;
+}
+
+#dashboard__rightBox .topRightBox #updatePostForm textarea:focus {
+  outline: none;
+}
+
+#dashboard__rightBox .topRightBox #deletePostForm .queryBox {
+  border: 1px solid #4e4e50;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: stretch;
+  background-color: rgba(83, 81, 81, 0.349);
+}
+
+#dashboard__rightBox .topRightBox #deletePostForm .queryBox > * {
+  color: white;
+}
+
+#dashboard__rightBox .topRightBox #deletePostForm .queryBox .queryBox__selectorWrapper {
+  border-right: 1px solid #4e4e50;
+}
+
+#dashboard__rightBox .topRightBox #deletePostForm .queryBox .queryBox__selectorWrapper select {
+  flex: 0.2;
+  background-color: transparent;
+  color: white;
+  text-transform: capitalize;
+}
+
+#dashboard__rightBox .topRightBox #deletePostForm .queryBox .queryBox__selectorWrapper select:hover {
+  cursor: pointer;
+}
+
+#dashboard__rightBox .topRightBox #deletePostForm .queryBox .queryBox__selectorWrapper select:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+#dashboard__rightBox .topRightBox #deletePostForm .queryBox .queryBox__selectorWrapper select option {
+  background-color: #242222;
+  padding: 0.25rem 0.5rem 0.25rem 1rem;
+  font-size: 0.8rem;
+}
+
+#dashboard__rightBox .topRightBox #deletePostForm .queryBox i {
+  flex-grow: 0.05;
+  flex-basis: 10px;
+  display: grid;
+  place-items: center;
+}
+
+#dashboard__rightBox .topRightBox #deletePostForm .queryBox input {
+  padding-left: 1rem;
+  background-color: transparent;
+  border: none;
+  flex-grow: 0.75;
+  flex-basis: 50px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+#dashboard__rightBox .topRightBox #deletePostForm .queryBox input:focus {
+  outline: none;
+}
+
+#dashboard__rightBox .topRightBox #getAllPostsForm .queryBox {
+  border: 1px solid #4e4e50;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: stretch;
+  background-color: rgba(83, 81, 81, 0.349);
+}
+
+#dashboard__rightBox .topRightBox #getAllPostsForm .queryBox .queryBox__selectorWrapper {
+  border-right: 1px solid #4e4e50;
+  flex: 1;
+}
+
+#dashboard__rightBox .topRightBox #getAllPostsForm .queryBox .queryBox__selectorWrapper select {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-transform: capitalize;
+}
+
+#dashboard__rightBox .topRightBox #getAllPostsForm .queryBox .queryBox__selectorWrapper select:hover {
+  cursor: pointer;
+}
+
+#dashboard__rightBox .topRightBox #getAllPostsForm .queryBox .queryBox__selectorWrapper select:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+#dashboard__rightBox .topRightBox #getAllPostsForm .queryBox .queryBox__selectorWrapper select option {
+  background-color: #242222;
+  padding: 0.25rem 0.5rem 0.25rem 1rem;
+  font-size: 0.8rem;
+}
+
+#dashboard__rightBox .topRightBox > form:nth-of-type(6) {
+  height: 90%;
+}
+
+#dashboard__rightBox .topRightBox > form:nth-of-type(6) q {
+  font-size: 1.2rem;
+  color: #e2e2e2;
+  color: #4e4e50;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#dashboard__rightBox .topRightBox > form:nth-of-type(6) q::before, #dashboard__rightBox .topRightBox > form:nth-of-type(6) q::after {
+  color: #c3073f;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+#dashboard__rightBox .topRightBox > form:nth-of-type(6) q #bloggerUserId {
+  color: #c3073f;
+}
+
+#dashboard__rightBox .bottomRightBox .bottomRightBox__heading {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
+#dashboard__rightBox .bottomRightBox #resultBox {
+  height: 80%;
+  min-height: 100px;
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: 1px solid #4e4e50;
+  color: white;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+/*# sourceMappingURL=dashboard.css.map */

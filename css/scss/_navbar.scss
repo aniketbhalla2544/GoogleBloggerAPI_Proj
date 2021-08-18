@@ -1,0 +1,46 @@
+@import "globals";
+
+// navbar starts
+.navbar__container {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.267);
+    z-index: 1000;
+    background-color: $theme-bodyBgColor;
+    // @include border(1px, white);
+    gap: 0 35px;
+
+    // logo
+    .navbar__logo {
+        font-size: 2rem;
+        font-weight: 800;
+        letter-spacing: 4px;
+
+        & span:nth-of-type(1) {
+            color: $theme-white;
+        }
+
+        & span:nth-of-type(2) {
+            color: $theme-pink;
+        }
+    }
+
+    .dividerLine{
+        border-right: 3px solid white;
+        display: inline-block;
+        height: 3rem;
+        width: 0px; 
+        // background-color: $theme-pink;
+    }
+
+    // nav items
+    .navbar__navLink {
+        font-size: 1rem;
+        transition: color 400ms ease 0s;
+        color: $theme-white;
+
+        &:hover {
+            color: $theme-pink;
+            border-bottom: 2px groove $theme-pink;
+        }
+    }
+}
